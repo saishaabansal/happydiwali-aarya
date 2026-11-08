@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>a little diwali something ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  background: #f8edcf;
+
+  color: #66382e;
+
+  font-family: 'DM Sans', sans-serif;
+
+  overflow-x: hidden;
+
+}
+
+.page {
+
+  max-width: 650px;
+
+  margin: auto;
+
+  padding: 35px 23px 55px;
+
+}
+
+/* decorative lights */
+
+.lights {
+
+  text-align: center;
+
+  letter-spacing: 13px;
+
+  font-size: 19px;
+
+  margin: 10px 0 35px;
+
+}
+
+/* heading */
+
+.top {
+
+  text-align: center;
+
+}
+
+.small {
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  font-size: 10px;
+
+  color: #a36b42;
+
+}
+
+h1 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: clamp(38px, 9vw, 58px);
+
+  line-height: 1.15;
+
+  margin: 17px 0 12px;
+
+  font-weight: 500;
+
+}
+
+h1 span {
+
+  color: #b64e37;
+
+  font-style: italic;
+
+}
+
+.subtitle {
+
+  font-size: 13px;
+
+  color: #92735c;
+
+  line-height: 1.8;
+
+}
+
+.diya {
+
+  font-size: 45px;
+
+  margin: 20px 0;
+
+}
+
+/* photos */
+
+.photos {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  margin: 35px 0 17px;
+
+}
+
+.photo {
+
+  background: #fff9e9;
+
+  padding: 9px 9px 16px;
+
+  border-radius: 4px;
+
+  box-shadow: 0 5px 18px #8d58351b;
+
+  transform: rotate(-2deg);
+
+}
+
+.photo:nth-child(2) {
+
+  transform: rotate(2deg);
+
+  margin-top: 17px;
+
+}
+
+.photo img {
+
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  display: block;
+
+  background: #ead9b7;
+
+}
+
+.photo p {
+
+  text-align: center;
+
+  font-family: 'Playfair Display', serif;
+
+  font-style: italic;
+
+  font-size: 13px;
+
+  margin-top: 12px;
+
+}
+
+/* message */
+
+.note {
+
+  background: #f1dfb9;
+
+  padding: 24px;
+
+  border-radius: 13px;
+
+  margin-top: 38px;
+
+  line-height: 1.9;
+
+  font-size: 14px;
+
+}
+
+.note .hello {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 23px;
+
+  margin-bottom: 12px;
+
+}
+
+/* surprise button */
+
+.surprise {
+
+  display: block;
+
+  margin: 28px auto 0;
+
+  border: none;
+
+  background: #984536;
+
+  color: #fff5dd;
+
+  padding: 14px 27px;
+
+  border-radius: 30px;
+
+  font-family: 'DM Sans', sans-serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+}
+
+.surprise:hover {
+
+  background: #713126;
+
+  transform: translateY(-2px);
+
+}
+
+.footer {
+
+  text-align: center;
+
+  margin-top: 42px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-style: italic;
+
+  font-size: 14px;
+
+  color: #a07858;
+
+}
+
+/* hidden letter */
+
+.overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  background: #38241fc9;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 22px;
+
+  z-index: 10;
+
+}
+
+.letter {
+
+  background: #fff4d9;
+
+  padding: 35px 27px;
+
+  border-radius: 15px;
+
+  max-width: 420px;
+
+  width: 100%;
+
+  text-align: center;
+
+  animation: appear .35s ease;
+
+}
+
+.letter h2 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-weight: 500;
+
+  font-size: 29px;
+
+  margin-bottom: 18px;
+
+}
+
+.letter p {
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+}
+
+.close {
+
+  margin-top: 23px;
+
+  background: none;
+
+  border: 1px solid #a66c4d;
+
+  border-radius: 20px;
+
+  padding: 9px 22px;
+
+  color: #713b30;
+
+  cursor: pointer;
+
+}
+
+@keyframes appear {
+
+  from {opacity: 0; transform: translateY(12px);}
+
+  to {opacity: 1; transform: translateY(0);}
+
+}
+
+@media(max-width: 400px) {
+
+  .photo img { height: 145px; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="lights">✦ 🪔 ✦ 🪔 ✦</div>
+
+  <div class="top">
+
+    <p class="small">yele gift-</p>
+
+    <h1>HAPPY DIWALI<br><span>CONCAVE ASS🥹 ♡</span></h1>
+
+    <p class="subtitle">
+
+       man i wish we could meet more often
+
+    </p>
+
+    <div class="diya">🪔</div>
+
+  </div>
+
+  <!-- YOUR PHOTOS -->
+
+  <div class="photos">
+
+    <div class="photo">
+
+      <img src="photo1.jpg" alt="Our favourite memory">
+
+      <p>KYA CUTE DIKHRE APAN ♡</p>
+
+    </div>
+
+    <div class="photo">
+
+      <img src="photo2.jpg" alt="Us together">
+
+      <p>sexy photos when😔</p>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN MESSAGE -->
+
+  <div class="note">
+
+    <p class="hello">hii aaryaaa ♡</p>
+
+    <p>
+
+    <br>happy diwali yaarrr </br>
+     <br>i miss you sosososo much and i miss seeing you every single day at pyramid</br>
+    <br>yaar pata hi nahi chala how time flew by</br>
+    <br>apna 10th boutta end n here we are being immature and stupid</br>
+    <br>ik ki its jus diwali pr na i really wanted to give u kuch accha bcs lets be real u mean the whole world to me💗</br>
+    <br>dekh me love u alot never forget that</br>
+    <br>and im soso thankful ki we dost and i have u by my side always</br>
+   <br>like baakiyo ka nahi pta but I KNOW that you will always have my back</br>
+    <br>lets meet firse soon🥹</br>
+
+    </p>
+
+
+  </div>
+
+  <button class="surprise" onclick="openLetter()">
+
+    one more little thing for you ♡
+
+  </button>
+
+  <div class="footer">
+
+    made with love, just for you ✧
+
+  </div>
+
+</div>
+
+<!-- SURPRISE POPUP -->
+
+<div class="overlay" id="overlay" onclick="closeOutside(event)">
+
+  <div class="letter">
+
+    <div style="font-size:35px; margin-bottom:12px;">💌</div>
+
+    <h2>psst... one last thing</h2>
+
+    <p>
+
+      I hope you know how special you are to me.
+
+      No matter how much time passes between our
+
+      meetups, some people just feel like home.
+
+      You're one of those people.
+
+    </p>
+
+    <br>
+
+    <p>
+
+      Now enough of the mushy stuff.
+
+      COME HERE I HAVE A MILLION THINGS TO TELL YOU 😭💗
+
+    </p>
+
+    <button class="close" onclick="closeLetter()">
+
+      hehe okay ♡
+
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+function openLetter() {
+
+  document.getElementById("overlay").style.display = "flex";
+
+}
+
+function closeLetter() {
+
+  document.getElementById("overlay").style.display = "none";
+
+}
+
+function closeOutside(event) {
+
+  if (event.target.id === "overlay") {
+
+    closeLetter();
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>
